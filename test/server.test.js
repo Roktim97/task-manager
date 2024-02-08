@@ -90,7 +90,7 @@ tap.test("PUT /tasks/:id with invalid data", async (t) => {
 });
 
 tap.test("DELETE /tasks/:id", async (t) => {
-  const response = await server.delete("/tasks/1");
+  const response = await server.delete("/tasks/5");
   t.equal(response.status, 200);
   t.end();
 });
